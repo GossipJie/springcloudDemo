@@ -6,12 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="consumerhi" />
         <module name="demo1" />
         <module name="eurekaserver" />
         <module name="servicehi" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="consumerhi" target="1.8" />
       <module name="demo1" target="1.5" />
       <module name="eurekaserver" target="1.8" />
       <module name="service-hi" target="1.8" />

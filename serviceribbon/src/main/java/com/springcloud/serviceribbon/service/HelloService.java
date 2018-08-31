@@ -18,9 +18,12 @@ public class HelloService {
 
     @Autowired
     RestTemplate restTemplate;
-
+    
     public String hiService(String name) {
        return restTemplate.getForObject("http://SERVICE-HI/hi?name="+name,String.class);
     }
 
+    public String hiTest(String name) {
+        return restTemplate.getForObject("http://localhost:8762/hi?name="+name,String.class);
+    }
 }
